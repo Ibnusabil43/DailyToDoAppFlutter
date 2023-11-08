@@ -69,6 +69,7 @@ class _toDoState extends State<toDo> {
         db.sundayToDo[index][1] = !db.sundayToDo[index][1];
       });
     }
+    db.updateDataBase(Day);
   }
 
   void saveNewTask(String Day) {
